@@ -1,10 +1,10 @@
-public class Box {
-    static int height;
-    static int width;
-    static float depth;
+class Box {
+    static double height;
+    static double width;
+    static double depth;
     static int count;     
 
-    Box(int h, int w, float d, int c){
+    Box(double h, double w, double d, int c){
         height = h;
         width = w;
         depth = d;
@@ -12,12 +12,15 @@ public class Box {
     }
 
     void displayResult(){
-        for(int i= 1; i <=count; i++){
-            float result = i * height * width * depth;
+        for(int i= 1; i <=4; i++){
+            double result = i * height * width * depth;
             System.out.println("Volume for box "+ i + " is " + result);
         }
     }
 
+}
+
+public class Volume_Box{
     public static void main(String[] args) {
         Box vol = new Box(5, 5, 5, 4);
         vol.displayResult();

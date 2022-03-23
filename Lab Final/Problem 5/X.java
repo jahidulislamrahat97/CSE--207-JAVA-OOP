@@ -1,6 +1,6 @@
 class Employee{
     double salary = 30000;
-    int count = 0;
+    int count;
 }
 
 class Teacher{
@@ -46,10 +46,5 @@ public class X {
         t2.display_total_payment(1);
 
         System.out.println("Count: " + (e.count));
-
-
-        
-        
-
     }
 }
